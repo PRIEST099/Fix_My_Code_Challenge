@@ -1,12 +1,16 @@
 #!/usr/bin/python3
+""" a python script to define square class"""
+
 
 class square():
-    
+    """a square dimensions class"""
+
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
+        """initialiser for the class"""
+
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -15,10 +19,15 @@ class square():
         return self.width * self.height
 
     def PermiterOfMySquare(self):
+        """perimeter of a square"""
+
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
+        """string representation of a square"""
+
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
 
