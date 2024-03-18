@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""
+""" 
 User class
 """
-
 
 class User():
     """ Documentation """
@@ -18,12 +17,13 @@ class User():
 
     @email.setter
     def email(self, value):
-        """Documentation"""
+        """ Documentation """
         if type(value) is not str:
             raise TypeError("email must be a string")
         self.__email = value
 
-
+  
+    
 if __name__ == "__main__":
 
     u = User()
